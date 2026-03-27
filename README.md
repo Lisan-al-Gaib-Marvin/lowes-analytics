@@ -2,7 +2,7 @@
 
 **An end-to-end analytics project analyzing Lowe's Companies across financial performance, customer sentiment, supply chain operations, and sustainability built with MySQL, Python, Claude API, Tableau, and Power BI.**
 
-> Capstone-style project for MS in Data Science & Business Analytics at UNC Charlotte (2026)
+> MS in Data Science & Business Analytics at UNC Charlotte (2026)
 
 ---
 
