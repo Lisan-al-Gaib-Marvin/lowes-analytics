@@ -1,6 +1,6 @@
 # Lowe's Companies (NYSE: LOW) — Full-Stack Data Science Project
 
-**An end-to-end analytics project analyzing Lowe's Companies across financial performance, customer sentiment, supply chain operations, and sustainability built with MySQL, Python, Claude API, Tableau, and Power BI.**
+**An end-to-end analytics project analyzing Lowe's Companies across financial performance, customer sentiment, supply chain operations, and sustainability built with MySQL, Python, Claude API, Tableau.**
 
 > MS in Data Science & Business Analytics at UNC Charlotte (2026)
 
@@ -33,7 +33,7 @@ This is not a single notebook it is a complete data pipeline from raw SEC filing
 DATA SOURCES              MYSQL                    PYTHON / JUPYTER           REPORTING
 ─────────────             ──────                   ────────────────           ─────────
 SEC EDGAR          ──▶   financials          ──▶   EDA & Visualization  ──▶  Tableau Dashboard
-Google Maps        ──▶   reviews             ──▶   Linear Regression    ──▶  Power BI Report
+Google Maps        ──▶   reviews             ──▶   Linear Regression    ──▶  Tableau Dashboard
 CSR Reports        ──▶   sustainability      ──▶   K-Means Clustering        
                                               ──▶   Claude API (Sonnet 4.6)
                                                     ├─ Feature Selection
