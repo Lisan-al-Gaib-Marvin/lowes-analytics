@@ -16,7 +16,7 @@ Lowe's is a Fortune 50 home improvement retailer headquartered in Mooresville, N
 
 ## What I Built
 
-This is not a single notebook — it is a complete data pipeline from raw SEC filings to an interactive executive dashboard, covering four business domains:
+This is not a single notebook it is a complete data pipeline from raw SEC filings to an interactive executive dashboard, covering four business domains:
 
 | Domain | Data Source | What I Analyzed |
 |--------|-----------|-----------------|
@@ -45,21 +45,21 @@ CSR Reports        ──▶   sustainability      ──▶   K-Means Clusterin
 ## Key Findings
 
 ### Financial Trends (FY2023–FY2025)
-- Revenue held steady at ~$84–86B, but **operating margin declined from 13.4% to 11.8%** — a compression of 160 basis points driven by acquisition costs and SGA growth
+- Revenue held steady at ~$84–86B, but **operating margin declined from 13.4% to 11.8%** a compression of 160 basis points driven by acquisition costs and SGA growth
 - Diluted EPS fell from $13.20 to $11.85 despite stable top-line revenue
 - Inventory turnover recovered to 3.3x after dipping to 3.2x, suggesting improving supply chain discipline
 
 ### Customer Sentiment (118 NC Stores)
 - Average Google Maps rating across NC: **4.13 / 5.0** with a tight distribution (3.8–4.6)
 - Charlotte Metro leads in both rating (4.20) and review volume, consistent with higher urban foot traffic
-- Mountains/Asheville region underperforms at 3.98 average rating — the only region below 4.0
+- Mountains/Asheville region underperforms at 3.98 average rating the only region below 4.0
 
 ### Modeling Results
-- **Linear Regression (R² = -0.38):** Geographic features alone do not predict review volume well. This is an honest finding — it tells us that store-level engagement depends on factors not captured in public data (store size, staffing, local competition). The negative R² is itself informative and guided recommendations for future data collection.
+- **Linear Regression (R² = -0.38):** Geographic features alone do not predict review volume well. This is an honest finding it tells us that store-level engagement depends on factors not captured in public data (store size, staffing, local competition). The negative R² is itself informative and guided recommendations for future data collection.
 - **K-Means Clustering (K=3, Silhouette=0.38):** Segmented stores into High-Traffic Urban, Mid-Market Suburban, and Low-Traffic Rural groups. Cluster separation was driven primarily by geographic position and review volume.
 
 ### AI Integration
-- Claude API (Sonnet 4.6) reviewed the dataset schema and flagged a **longitude data quality issue** and **target leakage in the volume_tier feature** — catches I incorporated before finalizing the models
+- Claude API (Sonnet 4.6) reviewed the dataset schema and flagged a **longitude data quality issue** and **target leakage in the volume_tier feature** catches I incorporated before finalizing the models
 - Claude generated the executive summary used in the Tableau dashboard narrative
 
 ---
